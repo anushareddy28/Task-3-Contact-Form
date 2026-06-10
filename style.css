@@ -1,0 +1,194 @@
+/* ===== Global Style ===== */
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #e2e8f0,
+        #dbeafe
+    );
+
+    color:#1e293b;
+}
+
+/* ===== Navigation Bar ===== */
+nav{
+    background:#0f172a;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ===== Hero Section ===== */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#475569;
+}
+
+/* ===== Content Section ===== */
+section{
+    background:white;
+    width:85%;
+    margin:30px auto;
+    padding:30px;
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== Headings ===== */
+h1{
+    color:#0f172a;
+}
+
+h2{
+    color:#2563eb;
+}
+
+/* ===== Services Layout ===== */
+.services{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* ===== Service Cards ===== */
+.card{
+    width:250px;
+    background:white;
+    padding:25px;
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+}
+
+/* ===== Contact Form ===== */
+form{
+    width:500px;
+    max-width:90%;
+    margin:auto;
+
+    background:white;
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* ===== Button ===== */
+button{
+    background:#2563eb;
+    color:white;
+
+    border:none;
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    font-size:16px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* ===== About Page ===== */
+.about-box{
+    width:80%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ===== Responsive Design ===== */
+@media(max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    form{
+        width:90%;
+    }
+}
